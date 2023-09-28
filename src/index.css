@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  transition: 0.8s;
+}
+
+body {
+  background: var(--body-background-color);
+  background: var(--body-background-gradient);
+  overflow-x: hidden;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+/*! темная тема */
+html[data-theme="dark"] {
+  --body-background-color: rgb(24, 23, 23);
+  --body-background-gradient: radial-gradient(
+    circle,
+    rgba(24, 23, 23, 1) 0%,
+    rgb(14, 13, 13) 100%
+  );
+  --text-title-color: #fff;
+  --text-color: #fff;
+  --block-background-color: #000;
+  --border-color: #fff;
+  --img-color: #fff;
+  --nav-menu-active: #545257;
+  --input-text-color: #fff;
+}
+
+/*! светлая тема */
+html[data-theme="light"] {
+  --body-background-color: rgb(234, 90, 85);
+  --body-background-gradient: radial-gradient(
+    circle,
+    rgba(234, 90, 85, 1) 0%,
+    #eb6780 100%
+  );
+  --text-title-color: #fff;
+  --text-color: #000;
+  --block-background-color: #fff;
+  --border-color: #000;
+  --img-color: #000;
+  --nav-menu-active: #c081f7;
+  --input-text-color: #000;
+}

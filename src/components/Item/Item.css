@@ -1,0 +1,105 @@
+.item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.item__input {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 260px;
+  padding-right: 55px;
+  font-size: 20px;
+  height: 40px;
+  margin: 5px 0;
+  transition: all 0.7s;
+  color: var(--input-text-color);
+  background: var(--block-background-color);
+}
+
+.item__input_completed {
+  text-decoration: line-through;
+  color: #8012e0;
+}
+
+.item__trash {
+  background: var(--block-background-color);
+  display: none;
+  position: absolute;
+  right: -30px;
+  transition: all 0.7s;
+}
+.item__trash-img * {
+  stroke: var(--img-color);
+}
+
+.item__trash:hover {
+  display: block;
+  right: 1px;
+  top: 15px;
+  width: 25px;
+}
+
+.item__input:hover + .item__trash {
+  width: 25px;
+  display: block;
+  position: absolute;
+  right: 1px;
+  top: 15px;
+  transition: all 0.7s;
+}
+
+.item__trash img {
+  width: 25px;
+}
+.item__btn-back img {
+  width: 25px;
+}
+.item__btn-trash img {
+  width: 25px;
+}
+
+.item__checkbox {
+  width: 20px;
+  height: 20px;
+  border: none;
+  margin-right: 10px;
+}
+
+.item__btns {
+  display: none;
+  position: absolute;
+  right: -100px;
+  width: 60px;
+  justify-content: space-between;
+}
+.item__btns button {
+  background: var(--block-background-color);
+}
+
+.item__input:hover + .item__btns {
+  right: 1px;
+  display: flex;
+}
+
+.item__btns:hover {
+  display: flex;
+  right: 1px;
+}
+
+.item__side-menu {
+  display: none;
+  position: absolute;
+  right: 0px;
+  /* display: flex; */
+  width: 60px;
+  justify-content: space-between;
+}
+.item__side-menu_active {
+  display: flex;
+}
+.item__side-button {
+  background: var(--block-background-color);
+}

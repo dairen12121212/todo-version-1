@@ -1,0 +1,19 @@
+.items {
+  margin-top: 25px;
+  padding: 10px 0 10px 0;
+  width: 350px;
+  min-height: 100px;
+  background-color: var(--block-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: all 0.7s;
+}
+
+.items__title {
+  font-size: 30px;
+  color: var(--text-color);
+  text-align: center;
+}
