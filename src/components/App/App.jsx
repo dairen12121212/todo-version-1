@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<TodoPages />} />
+        <Route exact path="/" element={<TodoPages />} />
         <Route path="/trash" element={<TrashPages />} />
         <Route path="/settings" element={<SettingsPages />} />
         <Route path="*" element={<NotFoundPage />} />
