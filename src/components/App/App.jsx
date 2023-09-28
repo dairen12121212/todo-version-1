@@ -26,12 +26,14 @@ function App() {
 
   return (
     <>
-      <Routes>
-        <Route path="/" element={<TodoPages />} />
-        <Route path="/trash" element={<TrashPages />} />
-        <Route path="/settings" element={<SettingsPages />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
+      <HashRouter basename="/app">
+        <Routes>
+          <Route path="/" element={<TodoPages />} />
+          <Route path="/trash" element={<TrashPages />} />
+          <Route path="/settings" element={<SettingsPages />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </HashRouter>
       {isOpenModalFull ? <ModalFull /> : null}
     </>
   );
