@@ -32,7 +32,6 @@ function App() {
         <Route path="/settings" element={<SettingsPages />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-
       {isOpenModalFull ? <ModalFull /> : null}
     </>
   );
